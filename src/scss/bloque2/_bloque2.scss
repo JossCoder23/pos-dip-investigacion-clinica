@@ -1,0 +1,361 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2 {
+    background-color: v.$secundario;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.bloque2__top {
+    height: 5rem;
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
+    justify-items: center;
+    column-gap: .8rem;
+    @include m.phone_iosxr_414 {
+        padding: 0 2rem;
+        height: 6rem;
+    }
+    @include m.desktop_1020 {
+        padding: 0 5rem;
+        height: 10rem;
+        column-gap: 1rem;
+    }
+    @include m.desktop_1280 {
+        padding: 0 6rem;
+        height: 12rem;
+        column-gap: 1.5rem;
+    }
+    @include m.desktop_1360 {
+        padding: 0 11rem;
+    }
+    @include m.desktop_1440 {
+        padding: 0 15rem;
+    }
+    @include m.desktop_1720 {
+        padding: 0 18rem;
+    }
+    @include m.desktop_1920 {
+        padding: 0 37rem;
+    }
+    @include m.desktop_2560 {
+        padding: 0 50rem;
+    }
+}
+
+.bloque2__top--item {
+    height: 3rem;
+    width: 9rem;
+    background-color: black;
+    cursor: pointer;
+    @include m.phone_iosxr_414 {
+        width: 12rem;
+        height: 3.5rem;
+    }
+    @include m.desktop_1020 {
+        // width: 26rem;
+        width: 100%;
+        height: 6.5rem;
+    }
+    @include m.desktop_1280 {
+        height: 7.5rem;
+    }
+    h3 {
+        color: white;
+        margin: 0;
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-weight: 600;
+        @include m.desktop_1020 {
+            font-size: 1.7rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 2.2rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.active {
+    background-color: v.$secundario;
+    h3 {
+        color: black;
+    }
+}
+
+.bloque2__dirigido {
+    height: auto;
+    width: 100%;
+    display: flex;
+    // display: none;
+    justify-content: center;
+    padding: 2.5rem;
+    background-color: v.$secundario;
+    @include m.phone_iosx_375 {
+        padding: 3rem 1rem;
+    }
+    @include m.desktop_1020 {
+        padding: 6rem 0;
+    }
+    @include m.desktop_1280 {
+        padding: 6rem;
+    }
+    @include m.desktop_1360 {
+        padding: 6rem 0;
+    }
+    @include m.desktop_1440 {
+        padding: 6rem 0;
+    }
+}
+
+.dirigido__container {
+    // height: 8rem;
+    width: 99%;
+    @include m.phone_iosx_375 {
+        width: 90%;
+    }
+    @include m.tablet_760 {
+        width: 80%;
+    }
+    @include m.desktop_1020 {
+        width: 90%;
+    }
+    @include m.desktop_1280 {
+        width: 99%;
+    }
+    @include m.desktop_1360 {
+        max-width: v.$width__1360;   
+    }
+    @include m.desktop_1440 {
+        max-width: v.$width__1440; 
+    }
+    @include m.desktop_1920 {
+        max-width: v.$width__1920; 
+    }
+    h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 1.3;
+        @include m.desktop_1020 {
+            font-size: 2.2rem;
+            line-height: 1.4;
+        }
+        @include m.desktop_1920 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+.bloque2__objetivos {
+    height: auto;
+    // display: block;
+    display: none;
+    width: 95%;
+    padding: 2rem 0;
+    @include m.phone_iosxr_414 {
+        width: 90%;
+        padding: 3rem 0;
+    }
+    @include m.tablet_760 {
+        width: 80%;    
+    }
+    @include m.desktop_1020 {
+        width: 90%;
+    }
+    @include m.desktop_1080 {
+        width: 89%;
+    }
+    @include m.desktop_1280 {
+        width: 90%;
+    }
+    @include m.desktop_1360 {
+        width: 100%;
+        max-width: v.$width__1360;
+    }
+    @include m.desktop_1440 {
+        max-width: v.$width__1440;
+    }
+    @include m.desktop_1920 {
+        max-width: v.$width__1920;
+    }
+}
+
+.separador_objetivos {
+    @include m.desktop_1020 {
+        height: 1.5rem !important;
+    }
+}
+
+.objetivos__item {
+    
+    @include m.desktop_1020 {
+        grid-template-columns: 5% 95% !important;
+    }
+    .certificado__vino {
+        h3 {
+            @include m.desktop_1020 {
+                font-size: 3rem !important; 
+            }
+        }
+    }
+    .certificado__description {
+        h3 {
+            @include m.desktop_1020 {
+                font-size: 2.2rem !important;
+            }
+            @include m.desktop_1920 {
+                font-size: 2.5rem !important;
+            }
+        }
+    }
+}
+
+.bloque2__planEstudios {
+    display: none;
+    // display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.planEstudios__container {
+    height: auto;
+    width: 30.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    row-gap: .5rem;
+    @include m.phone_iosx_375 {
+        width: 34rem;
+        padding: 2rem 0;
+    }
+    @include m.phone_iosxr_414 {
+        width: 37rem;
+    }
+    @include m.tablet_820 {
+        width: 75rem;
+    }
+    @include m.desktop_1020 {
+        row-gap: .8rem;
+        grid-template-rows: 6rem auto;
+        width: 91rem;
+        padding: 4rem 0;
+    }
+    @include m.desktop_1080 {
+        width: 95rem;
+    }
+    @include m.desktop_1280 {
+        width: 115rem;
+    }
+    @include m.desktop_1360 {
+        width: 113rem;
+    }
+}
+
+.planEstudios__top {
+    display: grid;
+    grid-row: 1 / 2;
+    background-color: white;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        @include m.desktop_1020 {
+            font-size: 1.8rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 2.2rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.planEstudios__bottom {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0 2rem;
+    .planEstudios__item {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        @include m.tablet_820 {
+            grid-template-columns: 93% 7%;
+        }
+        @include m.desktop_1020 {
+            grid-template-columns: 90% 10%;
+        }
+        h3 {
+            margin: 0;
+            padding: .5rem 0;
+            font-size: .9rem;
+            @include m.desktop_1020 {
+                font-size: 1.6rem;
+            }
+            @include m.desktop_1280 {
+                font-size: 2rem;
+            }
+            @include m.desktop_1920 {
+                font-size: 2.3rem;
+            }
+        }
+        span {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include m.desktop_1020 {
+                font-size: 1.6rem;
+            }
+            @include m.desktop_1280 {
+                font-size: 2rem;
+            }
+            @include m.desktop_1920 {
+                font-size: 2.3rem;
+            }
+        }
+        .total {
+            font-family: v.$fuente_helBold;
+            font-weight: 900;
+            font-size: 1.1rem;
+            @include m.desktop_1020 {
+                font-size: 1.6rem;
+            }
+            @include m.desktop_1280 {
+                font-size: 2.3rem;
+            }
+            @include m.desktop_1920 {
+                font-size: 2.5rem;
+            }
+        }
+        .subtotal {
+            @include m.desktop_1020 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

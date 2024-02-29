@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4__logo {
+    transform: scale(.9);
+    background: center/contain no-repeat url(../img/logo_black.webp);
+    @include m.phone_ios12_390 {
+        transform: scale(.8);
+    }
+    @include m.desktop_1920 {
+        transform: scale(.7);
+    }
+}

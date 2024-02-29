@@ -1,0 +1,74 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque6__container {
+    background-color: transparent;
+    border: 2px solid v.$primario;
+    height: 16rem;
+    width: 90%;
+    position: relative;
+    margin: 4rem 0 5rem 0;
+    @include m.desktop_1020 {
+        margin: 8rem 0 8rem 0;
+        height: 28rem;
+        border: 3px solid v.$primario;
+    }
+    @include m.desktop_1280 {
+        height: 31rem;
+    }
+    @include m.desktop_1360 {
+        height: 36rem;
+        width: v.$width__1360;
+        margin: 9rem 0 10rem 0;
+    }
+    @include m.desktop_1440 {
+        width: v.$width__1440;
+    }
+    @include m.desktop_1920 {
+        width: v.$width__1920;
+        height: 48rem;
+    }
+    @include m.desktop_2240 {
+        height: 60rem;
+        margin: 11rem 0 15rem 0;
+    }
+}
+
+.bloque6__image {
+    display: none;
+    @include m.desktop_1020 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        height: 53rem;
+        right: 0;
+        padding-left: 11%;
+        // background-color: red;
+        transform: scaleX(-1);
+    }
+    @include m.desktop_1280 {
+        height: 57rem;
+    }
+    @include m.desktop_1360 {
+        height: 63rem;
+        padding-left: 13%;
+    }
+    @include m.desktop_1920 {
+        height: 73rem;
+        padding-right: 11%;
+        padding-left: 20%;
+    }
+    @include m.desktop_2240 {
+        height: 84rem;
+    }
+    img {
+        display: none; 
+        @include m.desktop_1020 {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        
+    }
+    
+}

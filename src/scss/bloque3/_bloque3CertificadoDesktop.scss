@@ -1,0 +1,97 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.certificado__desktop {
+    display: none;
+    @include m.desktop_1020 {
+        display: grid;
+        height: auto;
+        // background-color: red;
+        // margin-bottom: 5rem;
+        grid-template-columns: 30% 7% 63%;
+        grid-template-rows: 4.5rem 4.5rem auto 8%;
+        // padding-bottom: 1rem;
+    }
+    @include m.desktop_1920 {
+        grid-template-rows: 6rem 6rem auto 8%; 
+    }
+    @include m.desktop_2240 {
+        grid-template-rows: 6.5rem 6.5rem auto 8%; 
+    }
+}
+
+.certificadoDesktop__other1 {
+    border-right: 3px solid v.$primario;
+    // border-top: 3px solid v.$primario;
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.certificadoDesktop__other2 {
+    border-left: 3px solid v.$primario;
+    border-bottom: 3px solid v.$primario;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.certificadoDesktop__title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    border-top: 3px solid v.$primario;
+    border-left: 3px solid v.$primario;
+    padding: 3rem 0;
+    h3 {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+        justify-content: center;
+        font-family: v.$fuente_helBold;
+        @include m.desktop_1280 {
+            font-size: 3rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 3.7rem;
+        }
+        @include m.desktop_2240 {
+            font-size: 4rem;
+        }
+    }
+}
+
+.certificadoDesktop__other3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    // border-top: 3px solid v.$primario;
+    border-right: 3px solid v.$primario;
+}
+
+.certificadoDesktop__other4 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    border-right: 3px solid v.$primario;
+    // border-left: 3px solid v.$primario;
+}
+
+.certificadoDesktop__other5 {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    background-color: v.$primario;
+}
+
+.certificadoDesktop__other6 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    // background-color: red;
+    border-right: 3px solid v.$primario;
+    border-top: 3px solid v.$primario;
+}
+
+.certificadoDesktop__grid {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    height: auto;
+    position: relative;
+}

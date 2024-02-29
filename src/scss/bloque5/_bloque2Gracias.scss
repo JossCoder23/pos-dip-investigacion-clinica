@@ -1,0 +1,144 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2--gracias {
+    padding: 2rem 0;
+    // padding-bottom: 10rem;
+    padding-bottom: 3rem;
+    background-color: white;
+    @include m.desktop_1020 {
+        margin-bottom: 8rem;
+    }
+    @include m.desktop_1280 {
+        padding-bottom: 5rem;
+    }
+    @include m.desktop_1920 {
+        margin-bottom: 5rem;
+    }
+}
+.bloque2__gracias {
+    // background-color: red;
+    height: auto;
+    width: 90%;
+    @include m.desktop_1360 {
+        width: 83%;
+    }
+    @include m.desktop_1440 {
+        width: v.$width__1440;
+    }
+    @include m.desktop_1920 {
+        grid-template-columns: 67% 33%;
+        width: v.$width__1920;
+    }
+}
+
+.bloque2Gracias__top {
+    // background-color: green;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include m.tablet_768 {
+        height: 10rem;
+    }
+    @include m.desktop_1020 {
+        height: 13rem;
+    }
+    @include m.desktop_1280 {
+        height: 20rem;
+    }
+    @include m.desktop_1920 {
+        height: 22rem;
+    }
+}
+
+.graciasTop__container {
+    border: 2px solid v.$primario;
+    background-color: transparent;
+    height: 60%;
+    width: 80%;
+    @include m.desktop_1020 {
+        width: 50%;
+    }
+    @include m.desktop_1280 {
+        width: 58%;
+    }
+    h3 {
+        display: grid;
+        font-family: v.$fuente_helReg;
+        // padding-left: 1rem;
+        justify-items: center;
+        font-size: 1.3rem;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        @include m.tablet_768 {
+            font-size: 2rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 2.6rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 3.5rem;
+            // justify-items: flex-start;
+            // padding-left: 5rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 4.2rem;
+        }
+    }
+}
+
+.bloque2Gracias__bottom {
+    height: auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: .8rem;
+    @include m.desktop_1920 {
+        gap: 2.3rem;
+    }
+}
+
+.bloque2GraciasBottom__item--black {
+    background-color: v.$primario !important;
+    h3 {
+        color: white;
+    }
+}
+
+.bloque2GraciasBottom__item {
+    height: 4rem;
+    border: 2px solid v.$primario;
+    background-color: white;
+    padding-left: 1rem;
+    @include m.desktop_1020 {
+        height: 5rem;
+        padding-left: 5rem;
+    }
+    @include m.desktop_1280 {
+        height: 6.5rem;
+    }
+    @include m.desktop_1920 {
+        height: 10rem;
+    }
+    h3 {
+        display: flex;
+        align-items: center;
+        // padding-left: .5rem;
+        height: 100%;
+        margin: 0;
+        @include m.tablet_768 {
+            font-size: 1.3rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 1.6rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 2.3rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 3.3rem;
+        }
+    }
+}

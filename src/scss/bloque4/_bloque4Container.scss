@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4__container {
+    // background-color: red;
+    height: 80%;
+    width: 90%;
+    display: grid;
+    @include m.grid_minmax(12rem, 1rem);
+    @include m.phone_ios12pro_428 {
+        @include m.grid_minmax(14rem, 1rem);
+    }
+}
+
+.bloque4__tramites {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    @include m.tablet_768 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+.bloque4__logo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    @include m.tablet_768 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}

@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4__campus {
+    // background-color: green;
+    display: grid;
+    align-items: center;
+    @include m.desktop_1020 {
+        justify-content: center;   
+    }
+}
+
+.campus__container {
+    height: auto;
+    // background-color: red;
+    padding-left: 1.5rem;
+    color: white;
+    line-height: 1.7;
+    @include m.phone_ios12pro_428 {
+        padding-left: 2.5rem;
+    }
+    h4, h5 {
+        margin: 0;
+    }
+    h4 {
+        font-size: 1.2rem;
+        font-family: v.$fuente_helBold;
+        @include m.phone_ios12_390 {
+            font-size: 1.3rem;
+        }
+        @include m.phone_ios12pro_428 {
+            font-size: 1.4rem;    
+        }
+        @include m.desktop_1020 {
+            font-size: 1.7rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 2.2rem;
+        }
+    }
+    h5 {
+        line-height: 1.2;
+        font-size: .9rem;
+        font-family: v.$fuente_helReg;
+        @include m.phone_ios12pro_428 {
+            font-size: 1.1rem;    
+        }
+        @include m.desktop_1020 {
+            font-size: 1.2rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 1.7rem;
+        }
+    }
+}

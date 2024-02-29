@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header__logo {
+    width: 15rem;
+    // margin-left: .5rem;
+    background: center/contain no-repeat url(../img/logo.webp);
+    @include m.desktop_1920 {
+        width: 17rem;
+    }
+    @include m.desktop_2240 {
+        width: 19rem;
+    }
+}

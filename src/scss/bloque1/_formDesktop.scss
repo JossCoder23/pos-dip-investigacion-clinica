@@ -1,0 +1,445 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.form__desktop {
+    display: none;
+    @include m.desktop_1020 {
+        height: auto;
+        // background-color: red;
+        display: grid;
+        grid-template-columns: 26% 40% 7% 7% 20%;
+        grid-template-rows: 30% 16% 7% 7% 40%;
+    }
+    // @include m.desktop_1280 {
+    //     grid-template-columns: 45% 15% 7% 33%;
+    // }
+    // @include m.desktop_1360 {
+    //     grid-template-rows: 52% 7% 7% 34%;
+    // }
+    // @include m.desktop_1440 {
+    //     grid-template-rows: 55% 7% 7% 31%;
+    // }
+    // @include m.desktop_1920 {
+    //     grid-template-columns: 46% 15% 7% 32%;
+    // }
+    // @include m.desktop_2560 {
+    //     grid-template-columns: 49% 15% 7% 29%;
+    // }
+}
+
+.desktop_item1 {
+    display: grid;
+    grid-column: 2 / 6;
+    grid-row: 1 / 3;
+    border-top: 2px solid v.$secundario;
+    h3 {   
+        display: flex;
+        align-items: center;
+        margin: 0;
+        color: v.$secundario;
+        justify-content: center;
+        line-height: 1.5;
+        font-size: 3rem;
+        @include m.desktop_1920 {
+            font-size: 4rem;
+        }
+    }
+}
+
+.desktop_item2 {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-right: 2px solid v.$secundario;
+    border-bottom: 2px solid v.$secundario;
+}
+
+.desktop_item3 {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border-left: 2px solid v.$secundario;
+}
+
+.desktop_item4 {
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    border-left: 2px solid v.$secundario;
+    border-top: 2px solid v.$secundario;
+    border-right: 2px solid v.$secundario;
+}
+
+.desktop_item5 {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    border-left: 2px solid v.$secundario;
+    border-top: 2px solid v.$secundario;
+    border-right: 2px solid v.$secundario;
+}
+
+.desktop_item6 {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    border-left: 2px solid v.$secundario;
+    border-bottom: 2px solid v.$secundario;
+    background: center/cover no-repeat url(../img/bg_investigacion_clinica.webp);
+}
+
+.desktop_item7 {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    border-right: 2px solid v.$secundario;
+    border-bottom: 2px solid v.$secundario;
+}
+
+.desktop_item8 {
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+    border-right: 2px solid v.$secundario;
+    border-bottom: 2px solid v.$secundario;
+}
+
+.desktop_item9 {
+    display: grid;
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+    border-bottom: 2px solid v.$secundario;
+}
+
+// .formDesktop__container {
+//     h3 {
+//         color: v.$secundario;
+//         margin: 0;
+//         font-family: v.$fuente_ptsReg;
+//         font-size: 2.3rem;
+//         @include m.tablet_768 {
+//             font-size: 3rem;
+//         }
+//         @include m.desktop_1020 {
+//             font-size: 2.2rem;    
+//         }
+//         @include m.desktop_1360 {
+//             font-size: 2.5rem;
+//         }
+//         // @include m.desktop_1920 {
+//         //     font-size: 3.2rem;
+//         // }
+//         @include m.desktop_2560 {
+//             font-size: 3rem;
+//         }
+//     }
+// }
+
+// .formDesktop__container__item {
+//     display: grid;
+//     grid-template-columns: 5% 95%;
+//     @include m.desktop_1020 {
+//         grid-template-columns: 8% 92%;
+//     }
+//     @include m.desktop_1920 {
+//         grid-template-columns: 5% 95%;
+//     }
+// }
+
+// .formDesktop__container__item_vino {
+//     h3 {
+//         height: 100%;
+//         display: flex;
+//         align-items: center;
+//         margin: 0;
+//     }
+// }
+
+// .formDesktop__container__item_text {
+//     h3 {
+//         margin: 0;
+//         font-size: 2rem;
+//         height: 100%;
+//         display: flex;
+//         align-items: center;
+//         @include m.tablet_768 {
+//             font-size: 2.8rem;
+//         }
+//         @include m.desktop_1020 {
+//             font-size: 2rem;
+//         }
+//         @include m.desktop_1920 {
+//             font-size: 2.5rem;
+//         }
+//         @include m.desktop_2048 {
+//             font-size: 2.4rem;
+//         }
+//         @include m.desktop_2560 {
+//             font-size: 3.3rem;
+//         }
+//     }
+// }
+
+
+
+// .formDesktop__title {
+//     display: none;
+//     @include m.desktop_1020 {
+//         grid-column: 1 / 3;
+//         grid-row: 1 / 2;
+//         border-top: 3px solid v.$secundario;
+//         border-left: 3px solid v.$secundario;
+//         padding: 2rem 1rem;
+//         line-height: 1.4;
+//         height: auto;
+//         display: block;
+//     }
+//     @include m.desktop_1440 {
+//         padding: 3rem 1rem;
+//     }
+//     @include m.desktop_1920 {
+//         padding: 1rem 2rem;
+//     }
+//     h4, h5 {
+//         margin: 0;
+//         color: v.$secundario;
+//         font-family: v.$fuente_helReg;
+//     }
+//     h4 {
+//         font-size: 1.9rem;
+//         font-family: v.$fuente_ptsReg;
+//         font-weight: 50;
+//         @include m.desktop_1020 {
+//             font-size: 5rem;
+//         }
+//         // @include m.desktop_1280 {
+//         //     font-size: 4.3rem;
+//         // }
+//         // @include m.desktop_1360 {
+//         //     font-size: 4.7rem;
+//         // }
+//         @include m.desktop_1440 {
+//             font-size: 6rem;
+//         }
+//         @include m.desktop_1920 {
+//             font-size: 6.5rem;
+//         }
+//         // @include m.desktop_2048 {
+//         //     font-size: 6.5rem;
+//         // }
+//         // @include m.desktop_2240 {
+//         //     font-size: 7rem;
+//         // }
+//         // @include m.desktop_2560 {
+//         //     font-size: 7.5rem;
+//         // }
+//         // @include m.desktop_2240 {
+//         //     font-size: 5.7rem;
+//         // }
+//     }
+//     h5 {
+//         text-decoration: underline;
+//         font-size: 1.8rem;
+//         font-weight: 80;
+//         @include m.desktop_1020 {
+//             font-size: 2rem;
+//         }
+//         // @include m.desktop_1280 {
+//         //     font-size: 1.8rem;
+//         // }
+//         @include m.desktop_1440 {
+//             font-size: 2.5rem;
+//         }
+//         // @include m.desktop_1920 {
+//         //     font-size: 2.5rem;
+//         // }
+//         // @include m.desktop_2048 {
+//         //     font-size: 2.8rem;
+//         // }
+//         // @include m.desktop_2240 {
+//         //     font-size: 3rem;
+//         // }
+//         // @include m.desktop_2560 {
+//         //     font-size: 3.2rem;
+//         // }
+//         // @include m.desktop_2240 {
+//         //     font-size: 4.7rem;
+//         // }
+//     }
+// }
+
+.formDesktop__gracias {
+    @include m.desktop_1020 {
+        grid-template-rows: 51% 7% 7% 27% 8%;
+    }
+    @include m.desktop_1080 {
+        grid-template-columns: 26% 35% 7% 7% 25%;    
+    }
+    @include m.desktop_1920 {
+        grid-template-columns: 42% 15% 7% 36%;
+        grid-template-rows: 53% 7% 7% 25% 8%;
+    }
+}
+
+.formDesktop__title--gracias {
+    h4 {
+        @include m.desktop_1020 {
+            font-size: 5rem;
+        }
+        // @include m.desktop_1280 {
+        //     font-size: 4rem;
+        // }
+        // @include m.desktop_1360 {
+        //     font-size: 4.3rem;
+        // }
+        @include m.desktop_1440 {
+            font-size: 6rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 6.5rem;
+        }
+    }
+    h5 {
+        @include m.desktop_1020 {
+            font-size: 2rem;
+        }
+        @include m.desktop_1440 {
+            font-size: 2.5rem;
+        }
+    }
+    
+}
+
+.formDesktop__corner {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    border-top: 3px solid v.$secundario;
+    border-right: 3px solid v.$secundario;
+}
+
+.formDesktop__image {
+    grid-column: 4 / 6;
+    grid-row: 1 / 3;
+    // background-color: green;
+    border-top: 3px solid v.$secundario;
+    border-left: 3px solid v.$secundario;
+    border-bottom: 3px solid v.$secundario;
+    position: relative;
+    // overflow-y: hidden;
+}
+
+.formDesktop__imageContainer {
+    background: 30%/cover no-repeat url(../img/masculinidad.webp);
+    height: 100%;
+    @include m.desktop_1440 {
+        background: center/cover no-repeat url(../img/masculinidad.webp);
+    }
+}
+
+.formDesktio__other1 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    // background-color: yellow;
+    border-top: 3px solid v.$secundario;
+    border-left: 3px solid v.$secundario;
+    border-bottom: 3px solid v.$secundario;
+}
+
+.formDesktio__other2 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    border-bottom: 3px solid v.$secundario;
+}
+
+.formDesktio__other3 {
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+    border-bottom: 3px solid v.$secundario;
+}
+
+.formDesktop__corner--gracias {
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+    border-top: 3px solid v.$secundario;
+    border-right: 3px solid v.$secundario;
+}
+
+.formDesktop__title--gracias {
+    @include m.desktop_1020 {
+        grid-column: 1 / 4;
+        grid-row: 1 / 5;
+    }
+}
+
+.formDesktio__other3--gracias {
+    @include m.desktop_1020 {
+        grid-row: 5 / 6;
+    }
+}
+
+.itemMovil11__other {
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+    border-bottom: 3px solid v.$secundario;
+}
+
+.itemMovil12__other {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    border-left: 3px solid v.$secundario;
+    border-top: 3px solid v.$secundario;
+    h3 {
+        margin: 0;
+        color: v.$secundario;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+        justify-content: center;
+        line-height: 1.4;
+        @include m.desktop_1280 {
+            font-size: 2.7rem;
+        }
+        @include m.desktop_1360 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.itemMovil11__other {
+    grid-column: 2 / 6;
+    grid-row: 4 / 6;
+    h3 {
+        height: 100%;
+        display: flex;
+        color: v.$secundario;
+        margin: 0;
+        align-items: center;
+        padding-left: 3rem;
+        font-size: 2rem;
+        @include m.desktop_1080 {
+            font-size: 2.2rem;
+        }
+        @include m.desktop_1360 {
+            font-size: 2.5rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 2.8rem;
+        }
+    }
+}
+
+.itemMovil13__other {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    border-left: 3px solid v.$secundario;
+    border-top: 3px solid v.$secundario;
+    border-bottom: 3px solid v.$secundario;
+}
+
+.itemMovil14__other {
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+    border-bottom: 3px solid v.$secundario;
+}

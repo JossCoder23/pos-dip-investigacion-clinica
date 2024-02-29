@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+footer {
+    height:  25rem;
+    background-color: #ffffff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    @include m.phone_400 {
+        height: 10rem;
+    }
+    @include m.desktop_1020 {
+        height: 16rem;
+    }
+    @include m.desktop_2240 {
+        height: 25rem;
+    }
+}

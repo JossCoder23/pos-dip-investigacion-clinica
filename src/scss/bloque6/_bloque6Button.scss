@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque6__button {
+    position: absolute;
+    // background-color: yellow;
+    width: 100%;
+    height: 4rem;
+    bottom: -2rem;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 30;
+    @include m.desktop_1020 {
+        justify-content: flex-start;
+        width: 66%;
+        height: 6rem;
+        bottom: -3rem;
+        padding-left: 7%;
+    }
+    @include m.desktop_1280 {
+        height: 8rem;
+        bottom: -4rem;
+    }
+    @include m.desktop_1920 {
+        height: 10rem;
+        bottom: -5rem;
+    }
+}
+
+.bloque6Button__container {
+    height: 100%;
+    width: 60%;
+    border: none;
+    background-color: v.$primario;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 10;
+    h3 {
+        margin: 0;
+        color: white;
+        font-size: 1.3rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include m.desktop_1020 {
+            font-size: 2rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 2.7rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 3.2rem;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque3__container {
+    height: 80%;
+    width: 90%;
+    // background-color: green;
+    @include m.desktop_1360 {
+        width: 83%;
+    }
+    @include m.desktop_1440 {
+        width: v.$width__1440;
+    }
+    @include m.desktop_1920 {
+        width: v.$width__1920;
+    }
+}

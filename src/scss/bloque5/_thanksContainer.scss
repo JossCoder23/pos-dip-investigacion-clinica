@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dateContainerGracias {
+    padding: 0;
+    height: 25rem;
+    background-color: v.$secundario;
+    // display: flex;
+    display: grid;
+    // align-items: center;
+    grid-template-rows: 75% 25%;
+    @include m.tablet_768 {
+        height: 22rem;
+    }
+    @include m.desktop_1020 {
+        height: 48rem;
+    }
+    @include m.desktop_1280 {
+        height: 52rem;
+    }
+    @include m.desktop_1360 {
+        height: 54rem;    
+    }
+    @include m.desktop_1440 {
+        height: 62rem;    
+    }
+    @include m.desktop_1920 {
+        height: 65rem;
+    }
+    @include m.desktop_2240 {
+        height: 68rem;
+    }
+    @include m.desktop_2304 {
+        height: 70rem;    
+    }
+    @include m.desktop_2560 {
+        height: 75rem;    
+    }
+}
+
+.formContainerGracias {
+    padding-bottom: 3rem;
+    @include m.desktop_1020 {
+        padding-bottom: 5rem;
+    }
+}
+
+.thanks__container {
+    // height: 50%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    // margin-bottom: 2rem;
+    // background-color: red;
+}

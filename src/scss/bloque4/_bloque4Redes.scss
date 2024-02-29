@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4__redes {
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include m.phone_360 {
+        justify-content: center;    
+    }
+    button {
+        background-color: white;
+        border-radius: 1rem;
+        border: 2px solid black;
+        height: 50%;
+        cursor: pointer;
+        @include m.phone_iosxr_414 {
+            height: 56%;
+            width: 90%;    
+        }
+        @include m.phone_480 {
+            width: 80%;
+        }
+        @include m.tablet_768 {
+            height: 41%;
+            width: 90%;
+        }
+        @include m.desktop_1280 {
+            height: 51%;
+            width: 96%;
+        }
+        @include m.desktop_1920 {
+            height: 43%;
+        }
+        @include m.desktop_2240 {
+            width: 85%;
+        }
+        @include m.desktop_2560 {
+            width: 75%;
+        }
+        h3 {
+            margin: 0;
+            color: black;
+            @include m.desktop_1020 {
+                font-size: 1.3rem;
+            }
+            @include m.desktop_1280 {
+                font-size: 1.6rem;
+            }
+            @include m.desktop_1920 {
+                font-size: 2.3rem;
+            }
+        }
+    }
+}

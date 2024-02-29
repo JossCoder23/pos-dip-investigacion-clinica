@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.heder__link {
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    width: 14rem;
+    h3 {
+        margin: 0;
+        font-family: v.$fuente_helBold;
+        font-size: 1rem;
+        @include m.tablet_768 {
+            font-size: 1.3rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 1.6rem;
+        }
+        @include m.desktop_1920 {
+            font-size: 2rem;
+        }
+        @include m.desktop_2240 {
+            font-size: 3rem;
+        }
+    }
+}

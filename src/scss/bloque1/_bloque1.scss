@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque1 {
+    background-color: v.$primario;
+    height: auto;
+    width: 100%;
+    // padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    @include m.desktop_1020 {
+        padding-top: 6rem;
+    }
+    @include m.desktop_1920 {
+        padding-top: 3rem;
+    }
+}

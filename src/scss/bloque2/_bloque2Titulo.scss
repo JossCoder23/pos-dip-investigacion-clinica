@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque2__titulo {
+    background-color: v.$primario;
+    padding: 2rem 1rem;
+    display: flex;
+    width: 100%;
+    @include m.desktop_1020 {
+        padding: 3rem 1rem;
+    }
+    @include m.desktop_1280 {
+        padding: 4rem 1rem;
+    }
+    h3 {
+        width: 100%;
+        margin: 0;
+        font-size: 1.6rem;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-family: v.$fuente_ptsReg;
+        font-weight: 100;
+        @include m.phone_iosx_375 {
+            font-size: 1.8rem;
+        }
+        @include m.phone_ios12_390 {
+            font-size: 2rem;
+        }
+        @include m.tablet_768 {
+            font-size: 2.8rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 3.3rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 4rem;
+        }
+        @include m.desktop_1360 {
+            font-size: 4.5rem;
+        }
+        @include m.desktop_2240 {
+            font-size: 5.6rem;
+        }
+        span {
+            font-family: v.$fuente_ptsReg;
+            color: v.$secundario;
+        }
+    }
+}

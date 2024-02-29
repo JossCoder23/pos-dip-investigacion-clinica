@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+header {
+    // background-color: red;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include m.desktop_1920 {
+        height: 10rem;
+    }
+    @include m.desktop_2240 {
+        height: 12rem;
+    }
+}
+
+.header__container {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    @include m.phone_360 {
+        width: 90%;
+    }
+    @include m.phone_iosx_375 {
+        width: 89%;
+    }
+    @include m.phone_400 {
+        width: 84%;
+    }
+    @include m.phone_420 {
+        width: 79%;
+    }
+    @include m.tablet_768 {
+        width: 69%;
+    }
+    @include m.desktop_1020 {
+        width: 90%;    
+    }
+    @include m.desktop_1360 {
+        width: 83%;
+    }
+    @include m.desktop_1440 {
+        width: v.$width__1440;
+    }
+    @include m.desktop_1920 {
+        width: v.$width__1920;
+    }
+}

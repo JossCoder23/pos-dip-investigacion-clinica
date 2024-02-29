@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque4 {
+    background-color: v.$primario;
+    height: 20rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    @include m.tablet_768 {
+        height: 15rem;
+    }
+    @include m.desktop_1920 {
+        height: 25rem;
+    }
+}
