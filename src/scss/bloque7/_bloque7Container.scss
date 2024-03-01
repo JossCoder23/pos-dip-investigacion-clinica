@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque7__container {
+    border: 2px solid v.$primario;
+    height: auto;
+    width: 90%;
+    @include m.desktop_1360 {
+        width: 83%;
+    }
+    @include m.desktop_1440 {
+        width: v.$width__1440;
+    }
+    @include m.desktop_1920 {
+        width: v.$width__1920;
+    }
+}

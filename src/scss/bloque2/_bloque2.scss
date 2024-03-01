@@ -9,6 +9,9 @@
     align-items: center;
     padding-bottom: 1rem;
     overflow: hidden;
+    @include m.desktop_1920 {
+        padding-bottom: 3rem;
+    }
 }
 
 .bloque2__top {
