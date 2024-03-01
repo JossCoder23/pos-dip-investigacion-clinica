@@ -329,10 +329,10 @@
 }
 
 .formDesktop__imageContainer {
-    background: 30%/cover no-repeat url(../img/masculinidad.webp);
+    background: 30%/cover no-repeat url(../img/bg_investigacion_clinica.webp);
     height: 100%;
     @include m.desktop_1440 {
-        background: center/cover no-repeat url(../img/masculinidad.webp);
+        background: center/cover no-repeat url(../img/bg_investigacion_clinica.webp);
     }
 }
 
