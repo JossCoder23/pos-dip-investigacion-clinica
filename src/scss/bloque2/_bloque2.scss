@@ -369,6 +369,9 @@
     justify-content: center;
     margin: 2rem 0 1rem 0;
     background-color: v.$secundario;
+    @include m.desktop_1280 {
+        margin: 2rem 0 2rem 0;
+    }
 }
 
 .docentes__container {
@@ -385,6 +388,30 @@
     @include m.phone_iosxr_414 {
         width: 95%;
     }
+    @include m.tablet_760 {
+        width: 88%;
+        @include m.grid-column(2, 2rem);
+    }
+    @include m.desktop_1020 {
+        width: 95%;
+        padding: 2rem 3rem;
+        @include m.grid-column(3, 3rem);
+    }
+    @include m.desktop_1360 {
+        width: 88%;
+    }
+    @include m.desktop_1440 {
+        width: 83%;
+    }
+    @include m.desktop_1620 {
+        width: 86%;    
+    }
+    @include m.desktop_1720 {
+        width: 83%;
+    }
+    @include m.desktop_1920 {
+        width: 117rem;
+    }
 }
 
 .docente__item {
@@ -392,6 +419,15 @@
     width: 100%;
     display: grid;
     grid-template-rows: 3.5rem auto;
+    @include m.tablet_760 {
+        grid-template-rows: 4rem auto;
+    }
+    @include m.desktop_1280 {
+        grid-template-rows: 4.5rem auto;
+    }
+    @include m.desktop_1360 {
+        grid-template-rows: 5rem auto;
+    }
 }
 
 .docente__title {
@@ -407,6 +443,15 @@
         font-size: 1.1rem;
         margin: 0;
         color: white;
+        @include m.tablet_760 {
+            font-size: 1.5rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 1.7rem;
+        }
+        @include m.desktop_1360 {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -419,5 +464,14 @@
         font-size: 1rem;
         text-align: center;
         font-weight: 100;
+        @include m.tablet_760 {
+            font-size: 1.3rem;
+        }
+        @include m.desktop_1280 {
+            font-size: 1.5rem;
+        }
+        @include m.desktop_1360 {
+            font-size: 1.8rem;
+        }
     }
 }
