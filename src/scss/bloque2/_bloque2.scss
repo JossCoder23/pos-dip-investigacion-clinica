@@ -167,74 +167,65 @@
 
 .bloque2__objetivos {
     height: auto;
-    width: 100%;
-    // display: flex;
+    // display: block;
     display: none;
-    justify-content: center;
-    padding: 2.5rem;
-    background-color: v.$secundario;
-    @include m.phone_iosx_375 {
-        padding: 3rem 1rem;
+    width: 95%;
+    padding: 2rem 0;
+    @include m.phone_iosxr_414 {
+        width: 90%;
+        padding: 3rem 0;
+    }
+    @include m.tablet_760 {
+        width: 80%;    
     }
     @include m.desktop_1020 {
-        padding: 6rem 0;
+        width: 90%;
+    }
+    @include m.desktop_1080 {
+        width: 89%;
     }
     @include m.desktop_1280 {
-        padding: 6rem;
+        width: 90%;
     }
     @include m.desktop_1360 {
-        padding: 6rem 0;
+        width: 100%;
+        max-width: v.$width__1360;
     }
     @include m.desktop_1440 {
-        padding: 6rem 0;
+        max-width: v.$width__1440;
+    }
+    @include m.desktop_1920 {
+        max-width: v.$width__1920;
     }
 }
 
-.objetivos__container {
-    width: 99%;
-    @include m.phone_iosx_375 {
-        width: 90%;
-    }
-    @include m.tablet_760 {
-        width: 80%;
-    }
+.separador_objetivos {
     @include m.desktop_1020 {
-        width: 90%;
+        height: 1.5rem !important;
     }
-    @include m.desktop_1280 {
-        width: 99%;
+}
+
+.objetivos__item {
+    
+    @include m.desktop_1020 {
+        grid-template-columns: 5% 95% !important;
     }
-    @include m.desktop_1360 {
-        max-width: v.$width__1360;   
-    }
-    @include m.desktop_1440 {
-        max-width: v.$width__1440; 
-    }
-    @include m.desktop_1920 {
-        max-width: v.$width__1920; 
-    }
-    h3 {
-        margin: 0;
-        font-size: 1.3rem;
-        line-height: 1.3;
-        // background-color: red;
-        @include m.desktop_1020 {
-            font-size: 2.2rem;
-            line-height: 1.4;
+    .certificado__vino {
+        h3 {
+            @include m.desktop_1020 {
+                font-size: 3rem !important; 
+            }
         }
-        @include m.desktop_1920 {
-            font-size: 2.5rem;
+    }
+    .certificado__description {
+        h3 {
+            @include m.desktop_1020 {
+                font-size: 2.2rem !important;
+            }
+            @include m.desktop_1920 {
+                font-size: 2.5rem !important;
+            }
         }
-        // @include m.desktop_1360 {
-        //     max-width: v.$width__1360;   
-        // }
-        // @include m.desktop_1440 {
-        //     max-width: v.$width__1440; 
-        // }
-        // @include m.desktop_1920 {
-        //     max-width: v.$width__1920; 
-        //     font-size: 2.5rem;
-        // }
     }
 }
 
