@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
     button3.classList.remove('active');
     button4.classList.remove('active');
     dirigido.style.display = "none";
-    objetivos.style.display = "block";
+    objetivos.style.display = "flex";
     planEstudios.style.display = "none";
     docentes.style.display = "none";
   });
