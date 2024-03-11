@@ -42,8 +42,9 @@
         display: flex;
         align-items: center;
         padding-right: 1rem;
-        font-size: v.$fuente_helReg;
+        font-family: v.$fuente_helReg;
         font-weight: 100;
+        font-size: 1.2rem;
         @include m.phone_360 {
             // padding: 2rem 1rem 2rem 0;
         }
